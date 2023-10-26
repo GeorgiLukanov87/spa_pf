@@ -6278,6 +6278,7 @@ button.bg-dark:focus {
 
 .d-flex {
   display: flex !important;
+  justify-content: center;
 }
 
 .d-inline-flex {
@@ -9270,6 +9271,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .text-body {
   color: #646464 !important;
+  text-align: center;
 }
 
 .text-muted {
