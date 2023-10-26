@@ -27,6 +27,7 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
 </head>
 
+
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
 <div class="wrapper">
     <div class="sidebar">
@@ -287,77 +288,6 @@
         </div>
         <!-- Education End -->
 
-
-        <!-- Portfolio Start -->
-        <div class="container bg-white pt-5 pb-3">
-            <div class="row px-3">
-                <div class="col-12">
-                    <h2 class="title position-relative pb-2 mb-4">Portfolio</h2>
-                </div>
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-12 text-center mb-2">
-                            <ul class="list-inline mb-4" id="portfolio-flters">
-                                <li class="btn btn-outline-primary active" data-filter="*"><i
-                                        class="fa fa-star mr-2"></i>All
-                                </li>
-                                <li class="btn btn-outline-primary" data-filter=".first"><i
-                                        class="fa fa-laptop-code mr-2"></i>Design
-                                </li>
-                                <li class="btn btn-outline-primary" data-filter=".second"><i
-                                        class="fa fa-mobile-alt mr-2"></i>Development
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row portfolio-container">
-                        <div class="col-md-6 mb-4 portfolio-item first">
-                            <div class="position-relative overflow-hidden mb-2">
-                                <img class="img-fluid w-100" src="{% static 'img/portfolio-1.jpg' %}" alt="">
-                                <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                    <a href="{% static 'img/portfolio-1.jpg' %}" data-lightbox="portfolio">
-                                        <i class="fa fa-4x fa-plus text-white"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4 portfolio-item second">
-                            <div class="position-relative overflow-hidden mb-2">
-                                <img class="img-fluid w-100" src="{% static 'img/portfolio-2.jpg' %}" alt="">
-                                <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                    <a href="{% static 'img/portfolio-2.jpg' %}" data-lightbox="portfolio">
-                                        <i class="fa fa-4x fa-plus text-white"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4 portfolio-item first">
-                            <div class="position-relative overflow-hidden mb-2">
-                                <img class="img-fluid w-100" src="{% static 'img/portfolio-3.jpg' %}" alt="">
-                                <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                    <a href="{% static 'img/portfolio-3.jpg' %}" data-lightbox="portfolio">
-                                        <i class="fa fa-4x fa-plus text-white"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4 portfolio-item second">
-                            <div class="position-relative overflow-hidden mb-2">
-                                <img class="img-fluid w-100" src="{% static 'img/portfolio-4.jpg' %}" alt="">
-                                <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                    <a href="{% static 'img/portfolio-4.jpg' %}" data-lightbox="portfolio">
-                                        <i class="fa fa-4x fa-plus text-white"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio End -->
-
-
         <!-- Certificates Start -->
         <div class="container bg-white py-5">
             <div class="row px-3">
@@ -366,7 +296,6 @@
                 </div>
                 <div class="col-12">
                     <div class="owl-carousel testimonial-carousel">
-
 
                         <div class="text-left">
                             <h4 class="text-body mb-4">Python Basics 2022</h4>
@@ -383,7 +312,6 @@
                                      style="width: 400px; height: 550px;">
                             </div>
                         </div>
-
                         <div class="text-left">
                             <h4 class="text-body mb-4">Python Advanced 2022</h4>
                             <div class="d-flex align-items-center">
@@ -391,7 +319,6 @@
                                      style="width: 400px; height: 550px;">
                             </div>
                         </div>
-
 
                         <div class="text-left">
                             <h4 class="text-body mb-4">Python OOP 2022</h4>
@@ -401,7 +328,6 @@
                             </div>
                         </div>
 
-
                         <div class="text-left">
                             <h4 class="text-body mb-4">HTML & CSS 2023</h4>
                             <div class="d-flex align-items-center">
@@ -409,7 +335,6 @@
                                      style="width: 400px; height: 550px;">
                             </div>
                         </div>
-
 
                         <div class="text-left">
                             <h4 class="text-body mb-4">JS Front-End 2023</h4>
@@ -439,11 +364,71 @@
                 </div>
             </div>
         </div>
-        <!-- Testimonial End -->
-        <div class="col-12">
-            <h2 class="title position-relative pb-2 mb-4">Contact Me</h2>
+
+        <div class="container bg-white py-5">
+            <div class="row px-3">
+                <div class="col-12">
+                    <h2 class="title position-relative pb-2 mb-4">Languages</h2>
+                </div>
+                <div class="col-sm-6">
+
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-2">Bulgarian</p>
+                            <p class="mb-2">100%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-2">English</p>
+                            <p class="mb-2">70%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-sm-6">
+
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-2">Spanish</p>
+                            <p class="mb-2">80%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-2">German</p>
+                            <p class="mb-2">35%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="35" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
 
+        <div class="col-12">
+            <h2 id="contact" class="title position-relative pb-2 mb-4">Contact Me</h2>
+        </div>
 
         <!-- Footer Start -->
         <div class="container-fluid bg-white pt-5 px-0">
@@ -467,7 +452,7 @@
                 </p>
             </div>
         </div>
-        <!-- Footer End -->
+
     </div>
 </div>
 
