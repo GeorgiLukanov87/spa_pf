@@ -9574,8 +9574,8 @@ h4, h5, h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   text-align: center;
   line-height: 1;
   font-size: 30px;
@@ -9583,6 +9583,7 @@ h4, h5, h6 {
   bottom: 30px;
   transition: background 0.5s;
   z-index: 11;
+
 }
 
 .back-to-top i {
@@ -9590,7 +9591,7 @@ h4, h5, h6 {
 }
 
 .back-to-top i:hover {
-  color: #141414;
+  color: #6b6767;
 }
 
 .back-to-top {
