@@ -62,11 +62,10 @@
                 <div class="col-12">
                     <h4>Junior Python Developer</h4>
                     <p>
-                        I'm currently seeking my first opportunity as a Junior Developer in the IT world, driven by a
-                        strong passion for continuous learning and skill
-                        development. I approach challenges with a blend of logical thinking and creative
-                        problem-solving. I thrive on finding innovative solutions to
-                        complex problems and am excited to contribute my enthusiasm and expertise to the tech industry.
+                        I'm a Junior Developer seeking opportunities in the IT world, driven by a strong passion for
+                        continuous learning and skill development. I approach challenges with a blend of logical
+                        thinking and creative problem-solving. I thrive on finding innovative solutions to complex
+                        problems and am excited to contribute my enthusiasm and expertise to the tech industry.
                     <div style="color: #949ca4">Free time: Diving, motorcycling,
                         traveling, reading.
                     </div>
@@ -160,9 +159,184 @@
                 <div class="col-12">
                     <h2 class="title position-relative pb-2 mb-4">Projects</h2>
                 </div>
-
                 <div class="col-12">
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
+
+                        {# START HERE - ANALYZE THAT CAR PROJECT#}
+                        <div class="position-relative mb-4">
+                            <i class="fa fa-arrow-right text-primary position-absolute"
+                               style="top: 3px; left: -24px;"></i>
+                            <h5 class="mb-1">Analyze That Car</h5>
+                            <small>(07/2024 - Present)</small>
+                            <p class="mb-2">
+                                <a target="_blank" href="https://github.com/GeorgiLukanov87/analyze_that_car">GitHub
+                                    Source code</a>
+                            </p>
+                            <p>Car Analysis and Recommendation System using Pandas, Numpy, Matplotlib and Streamlit for
+                                UI-visualization.This project consists of two main components:
+                            </p>
+
+                            <ul style="list-style-type: none">
+                                <li>
+                                    <span style="font-weight: bold;font-size: 20px">KMeans Clustering Algorithm:</span>
+                                    Performs data preprocessing and clustering on a car dataset. Uses the KMeans
+                                    algorithm
+                                    to group cars into 2-6 clusters based on features like year, price, kilometers
+                                    driven,
+                                    engine capacity, and horsepower. Implements the elbow method to determine the
+                                    optimal
+                                    number of clusters. Visualizes the clustering results using PCA for dimensionality
+                                    reduction.
+                                    Categorizes cars into <span style="font-weight: bold">Clusters</span>:
+
+                                    <ul style="list-style-type: square">
+                                        <li>Best offers(the best stats)</li>
+                                        <li>Balanced cars</li>
+                                        <li>Huge sized vans/mini-vans/jeeps/4x4/5+ seats etc...</li>
+                                        <li>Fast luxury cars(expensive, but fast and new)</li>
+                                        <li>Cheap and old cars(worst offer, worst stats)</li>
+                                    </ul>
+                                </li>
+
+                                <br>
+
+                                <li>
+                                    <span style="font-weight: bold;font-size: 20px">TOPSIS Method:</span>
+                                    Implements the Technique for Order of Preference by Similarity to Ideal Solution
+                                    (TOPSIS) for car recommendation. Reads the clustered car data from KMeans Clustering
+                                    Algorithm. Applies the TOPSIS method to rank cars based on multiple criteria:
+                                    <ul style="list-style-type: square">
+                                        <li>Year</li>
+                                        <li>Price</li>
+                                        <li>Kilometers driven</li>
+                                        <li>Engine cc</li>
+                                        <li>Capacity(seats)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div>
+                                Provides a function to print the top-ranked cars with their details.
+                                The project aims to analyze a dataset of cars, group them into meaningful clusters, and
+                                then provide recommendations for the best cars within a specific cluster based on
+                                multiple criteria. This system could be useful for car dealerships or consumers looking
+                                for specific types of vehicles that best match their preferences.
+                            </div>
+                            <br>
+                            <p style="color: #44aaee"> Technologies Used</p>
+                            <ul>
+                                <li>Python 3.7+</li>
+                                <li>Streamlit</li>
+                                <li>Pandas</li>
+                                <li>NumPy</li>
+                                <li>Matplotlib</li>
+                                <li>Scikit-learn</li>
+                                <li>AgGrid (for Streamlit)</li>
+                            </ul>
+                        </div>
+
+                        <div class="container bg-white pt-5 pb-3">
+                            <div class="row px-3">
+                                <div class="col-12">
+                                    <h2 class="title position-relative pb-2 mb-4">Screenshots</h2>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 text-center mb-2">
+                                            <ul class="list-inline mb-4" id="portfolio-flters">
+                                                <li class="btn btn-outline-primary active" data-filter="*"><i
+                                                        class="fa fa-arrow-down mr-2"></i>Show
+                                                </li>
+                                                <li class="btn btn-outline-primary" data-filter=".second"><i
+                                                        class="fa fa-arrow-up mr-2"></i>Hide
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="row portfolio-container" style="position: absolute">
+                                        <div class="col-md-6 mb-4 portfolio-item first">
+                                            <div class="position-relative overflow-hidden mb-2">
+                                                <img class="img-fluid w-100" style="height: 300px"
+                                                     src="{% static 'img/clusters_changing2.gif' %}" alt="">
+                                                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                    <a href="{% static 'img/clusters_changing2.gif' %}"
+                                                       data-lightbox="portfolio">
+                                                        <i class="fa fa-4x fa-plus text-white"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-4 portfolio-item first">
+                                            <div class="position-relative overflow-hidden mb-2">
+                                                <img class="img-fluid w-100" style="height: 300px"
+                                                     src="{% static 'img/elbow1.png' %}" alt="">
+                                                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                    <a href="{% static 'img/elbow1.png' %}" data-lightbox="portfolio">
+                                                        <i class="fa fa-4x fa-plus text-white"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-4 portfolio-item first">
+                                            <div class="position-relative overflow-hidden mb-2">
+                                                <img class="img-fluid w-100" style="height: 300px"
+                                                     src="{% static 'img/kmean1.png' %}" alt="">
+                                                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                    <a href="{% static 'img/kmean1.png' %}" data-lightbox="portfolio">
+                                                        <i class="fa fa-4x fa-plus text-white"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-4 portfolio-item first">
+                                            <div class="position-relative overflow-hidden mb-2">
+                                                <img class="img-fluid w-100" style="height: 300px"
+                                                     src="{% static 'img/clusters_changing3.gif' %}" alt="">
+                                                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                    <a href="{% static 'img/clusters_changing3.gif' %}"
+                                                       data-lightbox="portfolio">
+                                                        <i class="fa fa-4x fa-plus text-white"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-4 portfolio-item first">
+                                            <div class="position-relative overflow-hidden mb-2">
+                                                <img class="img-fluid w-100" style="height: 300px"
+                                                     src="{% static 'img/clusters_changing.gif' %}" alt="">
+                                                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                    <a href="{% static 'img/clusters_changing.gif' %}"
+                                                       data-lightbox="portfolio">
+                                                        <i class="fa fa-4x fa-plus text-white"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-4 portfolio-item first">
+                                            <div class="position-relative overflow-hidden mb-2">
+                                                <img class="img-fluid w-100" style="height: 300px"
+                                                     src="{% static 'img/topsis1.png' %}" alt="">
+                                                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                    <a href="{% static 'img/topsis1.png' %}" data-lightbox="portfolio">
+                                                        <i class="fa fa-4x fa-plus text-white"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {# END HERE - ANALYZE THAT CAR PROJECT#}
+
+
+                        {# START HERE - SPEARFISHING PROJECT#}
                         <div class="position-relative mb-4">
                             <i class="fa fa-arrow-right text-primary position-absolute"
                                style="top: 3px; left: -24px;"></i>
@@ -178,7 +352,7 @@
                             <p>"Spearfishing4Life" is a personal project that I developed from
                                 scratch. Using Django-Framework and pure HTML, CSS and JS. The app contains outer
                                 APIs(maps
-                                and weather) and a lot of unit tests. Full responsive and user-friendly interface.
+                                and weather) and unit tests. Full responsive and user-friendly interface.
                             <div>
                                 <p style="color: #44aaee"> Features:</p>
 
@@ -195,6 +369,7 @@
                                     <li>Useful resources and videos</li>
                                     <li>User-friendly interface with a full-responsive design</li>
                                     <li>Censored-System for comments and stories</li>
+                                    <li>Unit tests</li>
                                 </ul>
                             </div>
                             <p style="color: #44aaee"> Technologies Used</p>
@@ -283,7 +458,9 @@
                                 </div>
                             </div>
                         </div>
+                        {# END HERE - SPEARFISHING PROJECT#}
 
+                        {# START HERE - MOTO-MANIA PROJECT#}
                         <div class="position-relative mb-4">
                             <i class="fa fa-arrow-right text-primary position-absolute"
                                style="top: 3px; left: -24px;"></i>
@@ -408,18 +585,8 @@
                                 </div>
                             </div>
                         </div>
+                        {# END HERE - MOTO-MANIA PROJECT#}
 
-                        <div class="position-relative mb-4">
-                            <i class="fa fa-arrow-right text-primary position-absolute"
-                               style="top: 3px; left: -24px;"></i>
-                            <h5 class="mb-1">Car Data Analyzer</h5>
-                            <p class="mb-2">
-                                <a target="_blank" href="https://github.com/GeorgiLukanov87/car_task_pandas">GitHub
-                                    Source code</a>
-                            </p>
-                            <p>Extract data from json file and make analysis using pandas and
-                                OOP. Saving the final result to csv file.</p>
-                        </div>
                         <div class="position-relative mb-4">
                             <i class="fa fa-arrow-right text-primary position-absolute"
                                style="top: 3px; left: -24px;"></i>
@@ -427,48 +594,7 @@
                             <p class="mb-2"><a target="_blank"
                                                href="https://github.com/GeorgiLukanov87/Mini_project_Game">
                                 GitHub Source code</a></p>
-                            <p>Simple colored console python game.</p>
-                        </div>
-
-                        <div class="position-relative mb-4">
-                            <i class="fa fa-arrow-right text-primary position-absolute"
-                               style="top: 3px; left: -24px;"></i>
-                            <h5 class="mb-1">Wizard-Game</h5>
-                            <p class="mb-2"><a target="_blank"
-                                               href="https://github.com/GeorgiLukanov87/Wizard-Game">
-                                GitHub Source code</a></p>
-                            <p>Game created using HTML, CSS, JS, DOM.</p>
-                        </div>
-
-                        <div class="position-relative mb-4">
-                            <i class="fa fa-arrow-right text-primary position-absolute"
-                               style="top: 3px; left: -24px;"></i>
-                            <h5 class="mb-1">Maze-Runner Game</h5>
-                            <p class="mb-2"><a target="_blank"
-                                               href="https://github.com/GeorgiLukanov87/Maze-Runner">
-                                GitHub Source code</a></p>
-                            <p>Classic game using DOM manipulations for fun using ChatGPT. Player try to
-                                escape a maze-room.</p>
-                        </div>
-
-                        <div class="position-relative mb-4">
-                            <i class="fa fa-arrow-right text-primary position-absolute"
-                               style="top: 3px; left: -24px;"></i>
-                            <h5 class="mb-1">Tic-tac-toe Game</h5>
-                            <p class="mb-2"><a target="_blank"
-                                               href="https://github.com/GeorgiLukanov87/Tic-tac-toe">
-                                GitHub Source code</a></p>
-                            <p>Console game Tic-tac-toe using python.</p>
-                        </div>
-
-                        <div class="position-relative mb-4">
-                            <i class="fa fa-arrow-right text-primary position-absolute"
-                               style="top: 3px; left: -24px;"></i>
-                            <h5 class="mb-1">Tkinter-Calculator</h5>
-                            <p class="mb-2"><a target="_blank"
-                                               href="https://github.com/GeorgiLukanov87/Tkinter-Calculator">
-                                GitHub Source code</a></p>
-                            <p>Gui-Calculator using tkinter and python.</p>
+                            <p>Simple python console game.</p>
                         </div>
 
                     </div>
@@ -763,8 +889,7 @@
 
             <ul>
                 <li><span style="color: #007bff;font-size: 18px"> Email</span>: GeorgiStefanovLukanov@gmail.com</li>
-                <li><span style="color: #007bff;font-size: 18px"> Phone1</span>: +359893993157</li>
-                <li><span style="color: #007bff;font-size: 18px"> Phone2</span>: +34697243424</li>
+                <li><span style="color: #007bff;font-size: 18px"> Phone</span>: +34697243424</li>
                 <li><span style="color: #007bff;font-size: 18px"> GitHub Profile</span>: <a target="_blank"
                                                                                             href="https://github.com/GeorgiLukanov87">https://github.com/GeorgiLukanov87</a>
                 </li>
